@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/_180sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/loginvector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_52sdp"
+        android:layout_height="@dimen/_155sdp">
+    </ImageView>
+
+
+
+        <EditText
+            android:id="@+id/emailedittext"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/edittextbackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="@dimen/_22sdp"
+            android:layout_marginRight="@dimen/_22sdp"
+            android:hint="Email"
+            android:padding="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:layout_height="@dimen/_45sdp">
+
+
+
+        </EditText>
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/passwordedittext"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailedittext"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/edittextbackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:hint="Password"
+        android:padding="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:layout_height="@dimen/_45sdp">
+
+
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginLeft="@dimen/_72sdp"
+        android:layout_marginRight="@dimen/_72sdp"
+        android:backgroundTint="#141F8A"
+        android:textColor="@color/white"
+        android:text="Log In"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordedittext"
+        app:layout_constraintVertical_bias="0.242">
+
+
+    </Button>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textviewsignup"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/loginbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Don't Have Account ?  SIGN UP"
+        android:textSize="@dimen/_16sdp"
+        android:textAlignment="center"
+        android:textColor="#E65100"
+        android:layout_height="wrap_content">
+
+
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
